@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 class Program
@@ -38,6 +38,14 @@ class Program
                 maksymalnaWartosc = licznik;
                 dominanta = liczba;
             }
+        }
+
+        if (maksymalnaWartosc > size / 2)
+        {
+            Console.WriteLine("liczba jest liderem");
+        }
+        else {
+            Console.WriteLine("liczba nie jest liderem");
         }
 
         Console.WriteLine($"Dominanta zbioru to: {dominanta}, występuje {maksymalnaWartosc} razy.");
